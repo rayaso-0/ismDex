@@ -1,0 +1,2 @@
+- ismDex Discord Bot similar to https://discord.com/application-directory/999736048596816014 (BallsDex) made for the IsmIsm discord server.
+- (https://discord.gg/uvWgCGBkAS) link to discord server ! 
