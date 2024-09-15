@@ -14,15 +14,5 @@ client.on('ready', (c) => {
     console.log(`✅ ${c.user.tag} is online.`);
 });
 
-client.on('messageCreate', (message) => {
-    if (message.author.bot) {
-        return;
-    }
-
-    if (message.content === 'hello') {
-        message.reply('im gonna touch you Jalen :)')
-    }
-});
-
 client.login(process.env.TOKEN);
 
