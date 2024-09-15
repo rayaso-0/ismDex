@@ -3,10 +3,13 @@ const { REST, Routes } = require('discord.js');
 
 const commands = [
     {
-        name: 'hello',
+        name: 'touch',
         description: 'Replies with Im gonna touch you Jalen.',
     },
-
+    {
+        name: 'info',
+        description: 'Replies with the information about ismDex discord bot.',
+    },
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
