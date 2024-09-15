@@ -1,6 +1,6 @@
 # Privacy Policy for ismDex
 
-This Privacy Policy governs the collection, use, and sharing of personal information by *ismDex*, a Discord bot developed by ** Kristoef Barrett **. By using ** ismDex **, you agree to the terms of this Privacy Policy.
+This Privacy Policy governs the collection, use, and sharing of personal information by **ismDex**, a Discord bot developed by **Kristoef Barrett**. By using **ismDex**, you agree to the terms of this Privacy Policy.
 
 Information We Collect
 
@@ -8,7 +8,7 @@ We collect information that you provide to us through your use of the bot, such 
 
 How We Use Your Information
 
-We use your information to operate and improve ** ismDex **, including to provide support and respond to your requests. We may also use your information to develop new features or services, to conduct research and analytics, and to comply with legal obligations.
+We use your information to operate and improve **ismDex**, including to provide support and respond to your requests. We may also use your information to develop new features or services, to conduct research and analytics, and to comply with legal obligations.
 
 Sharing Your Information
 
@@ -16,7 +16,7 @@ We do not sell or share your personal information with third parties. However, w
 
 Data Retention
 
-We retain your information for as long as necessary to provide ** ismDex’s ** services or as required by law. We will delete your information upon your request or when it is no longer needed.
+We retain your information for as long as necessary to provide **ismDex’s** services or as required by law. We will delete your information upon your request or when it is no longer needed.
 
 Data Security
 
@@ -24,12 +24,12 @@ We take reasonable measures to protect your information from unauthorized access
 
 Changes to this Policy
 
-We may update this Privacy Policy from time to time, and we will post the updated policy on our website. Your continued use of ** ismDex ** after we make changes to this policy indicates your acceptance of the revised policy.
+We may update this Privacy Policy from time to time, and we will post the updated policy on our website. Your continued use of **ismDex** after we make changes to this policy indicates your acceptance of the revised policy.
 
 Contact Us
 
-If you have any questions or concerns about this Privacy Policy, please contact us at ** kristoef.barr3945@gmail.com **.
+If you have any questions or concerns about this Privacy Policy, please contact us at **kristoef.barr3945@gmail.com**.
 
 Effective Date
 
-This Privacy Policy is effective as of ** 9/15/24 **.
+This Privacy Policy is effective as of **9/15/24**.
