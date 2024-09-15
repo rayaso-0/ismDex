@@ -20,7 +20,7 @@ client.on('messageCreate', (message) => {
     }
 
     if (message.content === 'hello') {
-        message.reply('im gonna touch you @(473203135007948820)')
+        message.reply('im gonna touch you Jalen :)')
     }
 });
 
