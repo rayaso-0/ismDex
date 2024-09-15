@@ -1,2 +1,3 @@
 - ismDex Discord Bot similar to https://discord.com/application-directory/999736048596816014 (BallsDex) made for the IsmIsm discord server.
 - (https://discord.gg/uvWgCGBkAS) link to discord server ! 
+- Please read the [privacy policy](https://github.com/rayaso-0/ismDex/blob/main/privacypolicy.txt) and the [terms of service](https://github.com/rayaso-0/ismDex/blob/main/terms-of-service.txt) of the ismDex bot before use of any case. 
