@@ -36,8 +36,17 @@ const commands = [
     },
     {
         name: 'jalen_bio',
-        description: 'Bio for Airthyus'
+        description: 'Bio for Jalen'
+    },
+    {
+        name: 'links',
+        description: 'All ismism links'
+    },
+    {
+        name: 'flipacoin',
+        description: 'literally just flip a coin'
     }
+
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
