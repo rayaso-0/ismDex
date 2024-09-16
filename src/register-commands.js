@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { REST, Routes } = require('discord.js');
+const { REST, Routes, ApplicationCommandOptionType, Application, ApplicationCommandOptionWithAutocompleteMixin } = require('discord.js');
 
 const commands = [
     {
@@ -10,6 +10,34 @@ const commands = [
         name: 'info',
         description: 'Replies with the information about ismDex discord bot.',
     },
+    {
+        name: 'tos',
+        description: 'Link to the Terms Of Service',
+    },
+    {
+        name: 'privacypolicy',
+        description: 'Link to the Privacy Policy',
+    },
+    {
+        name: 'github',
+        description: 'Link to the github repo for the ismDex discord bot',
+    },
+    {
+        name: 'rayaso_bio',
+        description: 'Bio for Rayaso',
+    },
+    {
+        name: 'groovy_bio',
+        description: 'Bio for Groovy',
+    },
+    {
+        name: 'airthyus_bio',
+        description: 'Bio for Airthyus'
+    },
+    {
+        name: 'jalen_bio',
+        description: 'Bio for Airthyus'
+    }
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
