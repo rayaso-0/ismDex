@@ -14,9 +14,14 @@ client.on('ready', (c) => {
     console.log(`✅ ${c.user.tag} is online.`);
 
     client.user.setActivity({
-        name: 'dajfadlskfjdas;lfksfkjlhsafklasjhfslakjfhsadlkfjhsaflkjshalsjfkhaslfkhsaflsahflsakhfsalfhsalfhsa',
+        name: 'gooning to jalen',
         type: ActivityType.Custom,
     })
+});
+
+client.on('guildMemberAdd', async member => {
+    client.channels.cache.get('1269595509656391702')
+        .send(`${member.user.tag} just joined our server! Welcome to the Official 'ismism' Server ${member.user.tag}, you poor soul...`);
 });
 
 client.on('interactionCreate', (interaction) => {

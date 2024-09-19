@@ -4,11 +4,11 @@ const { REST, Routes, ApplicationCommandOptionType, Application, ApplicationComm
 const commands = [
     {
         name: 'touch',
-        description: 'Replies with Im gonna touch you Jalen.',
+        description: 'Replies with Im gonna touch you Jalen',
     },
     {
         name: 'info',
-        description: 'Replies with the information about ismDex discord bot.',
+        description: 'Replies with the information about ismDex discord bot',
     },
     {
         name: 'tos',
@@ -42,11 +42,6 @@ const commands = [
         name: 'links',
         description: 'All ismism links'
     },
-    {
-        name: 'flipacoin',
-        description: 'literally just flip a coin'
-    }
-
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
