@@ -42,6 +42,15 @@ client.on('interactionCreate', (interaction) => {
     if (interaction.commandName === 'github') {
         interaction.reply('Here is the link to our GitHub Repository: https://github.com/rayaso-0/ismDex')
     }
+    if (interaction.commandName === 'release-notes') {
+        const embed = new EmbedBuilder()
+            .setTitle('Here is the link my release notes!')
+            .addFields({
+                name: ' ',
+                value: 'https://github.com/rayaso-0/ismDex/releases'
+            })
+        interaction.reply({ embeds: [embed] });
+    }
     if (interaction.commandName === 'links') {
         const embed = new EmbedBuilder()
             .setTitle('All the IsmIsm links:')

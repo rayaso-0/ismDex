@@ -42,6 +42,10 @@ const commands = [
         name: 'links',
         description: 'All ismism links'
     },
+    {
+        name: 'release-notes',
+        description: 'link to github release notes for the bot'
+    }
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
