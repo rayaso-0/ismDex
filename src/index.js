@@ -45,9 +45,10 @@ client.on('interactionCreate', (interaction) => {
     if (interaction.commandName === 'release-notes') {
         const embed = new EmbedBuilder()
             .setTitle('Here is the link my release notes!')
+            .setImage('https://i.imgur.com/j7dRqSh.jpg')
             .addFields({
                 name: ' ',
-                value: 'https://github.com/rayaso-0/ismDex/releases'
+                value: 'https://github.com/rayaso-0/ismDex/releases',
             })
         interaction.reply({ embeds: [embed] });
     }
