@@ -21,8 +21,21 @@ client.on('ready', (c) => {
 
 client.on('guildMemberAdd', async member => {
     client.channels.cache.get('1269595509656391702')
-        .send(`${member.user.tag} just joined our server! Welcome to the Official 'ismism' Server ${member.user.tag}, you poor soul...`);
+        .send(`Welcome to the Official 'ismism' Server, ${member.user.tag}, you poor soul...`)
 });
+
+client.on("message", (msg) => {
+    let isWelcomeMessage = msg.type === 'GUILD_MEMBER_JOIN'
+
+    if (isWelcomeMessage) {
+        msg.author.send(`Welcome to the IsmIsm discord server, ${msg.author.username}!`)
+        client.channels.cache.get('1269595509656391702').send(`${msg.author.username}, thank you for graciously granted us with your presence.`)
+    }
+
+    let message = msg.content;
+    let channel = msg.channelID;
+    let botChannel = "1269595509656391702"
+})
 
 client.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;
@@ -41,6 +54,9 @@ client.on('interactionCreate', (interaction) => {
     }
     if (interaction.commandName === 'github') {
         interaction.reply('Here is the link to our GitHub Repository: https://github.com/rayaso-0/ismDex')
+    }
+    if (interaction.commandName === 'help') {
+        interaction.reply('Go to the "ismDex-bot-info" channel if you need any help!>')
     }
     if (interaction.commandName === 'release-notes') {
         const embed = new EmbedBuilder()
@@ -114,19 +130,16 @@ client.on('interactionCreate', (interaction) => {
     if (interaction.commandName === 'airthyus_bio') {
         const embed = new EmbedBuilder()
             .setTitle("Meet Airthyus!")
-            .setDescription('\ntest\n')
+            .setDescription('\nAirthyus is one of the founding members of IsmIsm.\nWith a strong passion in gaming and math, he wants to go further than that and see where life takes him. He is currently interested in fighter games such as Tekken, MK and brawlhalla. He occasionally plays apex and overwatch. He does a lot behind the scenes for Ism so be on the lookout for him! \n')
             .setColor('DarkRed')
+            .setImage('https://i.imgur.com/dy4juGO.jpg')
             .addFields({
-                name: 'test',
-                value: 'test',
+                name: 'Youtube',
+                value: 'https://www.youtube.com/@Nexonnite',
                 inline: true
             }, {
-                name: 'test',
-                value: 'test',
-                inline: true
-            }, {
-                name: 'test',
-                value: 'test',
+                name: 'Twitch',
+                value: 'https://www.twitch.tv/airthyus',
                 inline: true
             })
 

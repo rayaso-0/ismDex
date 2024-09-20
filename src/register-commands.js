@@ -45,7 +45,11 @@ const commands = [
     {
         name: 'release-notes',
         description: 'link to github release notes for the bot'
-    }
+    },
+    {
+        name: 'help',
+        description: 'link to ismDex-bot-info channel'
+    },
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
