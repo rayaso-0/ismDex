@@ -1,5 +1,6 @@
 require('dotenv').config();
 const { Client, IntentsBitField, ActivityType, messageLink, userMention, User, Embed, EmbedBuilder } = require('discord.js');
+const eventHandlers = require('./handlers/eventHandler');
 
 const client = new Client({
     intents: [
@@ -10,19 +11,7 @@ const client = new Client({
     ],
 });
 
-client.on('ready', (c) => {
-    console.log(`✅ ${c.user.tag} is online.`);
-
-    client.user.setActivity({
-        name: 'gooning to jalen',
-        type: ActivityType.Custom,
-    })
-});
-
-client.on('guildMemberAdd', async member => {
-    client.channels.cache.get('1269595509656391702')
-        .send(`Welcome to the Official 'ismism' Server, ${member.user.tag}, you poor soul...`)
-});
+eventHandlers(client);
 
 client.on("message", (msg) => {
     let isWelcomeMessage = msg.type === 'GUILD_MEMBER_JOIN'
