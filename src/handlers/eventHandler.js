@@ -6,8 +6,15 @@ module.exports = (client) => {
 
     for (const eventFolder of eventFolders) {
         const eventFiles = getAllFiles(eventFolder);
+        eventFiles.sort((a, b) => a > b);
 
         const eventName = eventFolder.replace(/\\/g, '/').split('/').pop();
-        console.log(eventName);
+
+        client.on(eventName, async (arg) => {
+            for (const eventFile of eventFiles) {
+                const eventFunction = require(eventFile);
+                await eventFunction(client, arg);
+            }
+        });
     }
 };
